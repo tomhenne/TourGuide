@@ -2,19 +2,19 @@
 
 buildscript {
     ext {
-        kotlin_version = '1.2.30'
+        kotlin_version = '1.2.40'
         espressoVersion = '2.2.2'
-        supportVersion = '25.4.0'
-        compileSdkVersionNum = 26
-        targetSdkVersionNum = 26
-        minSdkVersionNum = 11
-        buildToolVersionNum = '26.0.2'
+        supportVersion = '27.1.1'
+        compileSdkVersionNum = 27
+        targetSdkVersionNum = 27
+        minSdkVersionNum = 14
+        buildToolVersionNum = '27.0.1'
     }
     dependencies {
         repositories {
             jcenter()
         }
-        classpath "com.android.tools.build:gradle:3.0.1"
+        classpath 'com.android.tools.build:gradle:3.1.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -26,6 +26,7 @@ buildscript {
             url "https://maven.google.com/"
             name "Google"
         }
+        google()
     }
 }
 
@@ -36,5 +37,6 @@ allprojects {
             url "https://maven.google.com/"
             name "Google"
         }
+        jcenter()
     }
 }
