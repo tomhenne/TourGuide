@@ -368,6 +368,10 @@ public class TourGuide {
             x = targetViewX + mHighlightedView.getWidth() - (int)adjustment;
         } else {
             x = targetViewX + mHighlightedView.getWidth() / 2 - toolTipMeasuredWidth / 2;
+
+            if (x + toolTipMeasuredWidth > getScreenWidth()) {
+                x = getScreenWidth() - toolTipMeasuredWidth;
+            }
         }
         return x;
     }
