@@ -371,6 +371,8 @@ public class TourGuide {
 
             if (x + toolTipMeasuredWidth > getScreenWidth()) {
                 x = getScreenWidth() - toolTipMeasuredWidth;
+
+                if (x <= adjustment) x = (int)adjustment;
             }
         }
         return x;
