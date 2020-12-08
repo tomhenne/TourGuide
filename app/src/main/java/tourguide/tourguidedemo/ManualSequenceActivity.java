@@ -2,7 +2,7 @@ package tourguide.tourguidedemo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -17,7 +17,7 @@ import tourguide.tourguide.TourGuide;
 /**
  * InSequenceActivity demonstrates how to use TourGuide in sequence one after another
  */
-public class ManualSequenceActivity extends ActionBarActivity {
+public class ManualSequenceActivity extends AppCompatActivity {
     public TourGuide mTutorialHandler, mTutorialHandler2;
     public Activity mActivity;
 

@@ -1,14 +1,10 @@
 package tourguide.tourguidedemo
 
-import android.app.Activity
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.ActionBarActivity
+import android.support.v7.app.AppCompatActivity
 import android.view.Gravity
-import android.view.View
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_basic.*
 
 import tourguide.tourguide.Overlay
 import tourguide.tourguide.Pointer
@@ -16,7 +12,7 @@ import tourguide.tourguide.ToolTip
 import tourguide.tourguide.TourGuide
 
 
-class BasicActivity : ActionBarActivity() {
+class BasicActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         /* Get parameters from main activity */
         val colorDemo = intent.getBooleanExtra(COLOR_DEMO, false)
@@ -32,6 +28,8 @@ class BasicActivity : ActionBarActivity() {
         if (colorDemo) {
             pointer.setColor(Color.RED)
         }
+        val button1 = findViewById(R.id.button1) as Button
+        val button2 = findViewById(R.id.button2) as Button
         if (gravityDemo) {
             pointer.setGravity(Gravity.BOTTOM or Gravity.RIGHT)
             button1.text = "BUTTON\n THAT IS\n PRETTY BIG"

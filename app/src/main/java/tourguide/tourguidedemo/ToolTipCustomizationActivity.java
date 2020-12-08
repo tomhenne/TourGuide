@@ -3,7 +3,7 @@ package tourguide.tourguidedemo;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
@@ -17,7 +17,7 @@ import tourguide.tourguide.ToolTip;
 import tourguide.tourguide.TourGuide;
 
 
-public class ToolTipCustomizationActivity extends ActionBarActivity {
+public class ToolTipCustomizationActivity extends AppCompatActivity {
     public TourGuide mTutorialHandler;
     public Activity mActivity;
 

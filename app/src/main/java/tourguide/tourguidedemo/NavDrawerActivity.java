@@ -3,8 +3,8 @@ package tourguide.tourguidedemo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
@@ -17,7 +17,7 @@ import tourguide.tourguide.Sequence;
 import tourguide.tourguide.ToolTip;
 import tourguide.tourguide.TourGuide;
 
-public class NavDrawerActivity extends ActionBarActivity {
+public class NavDrawerActivity extends AppCompatActivity {
     TextView mTextView1, mTextView2, mTextView3;
     NavDrawerActivity mActivity;
     Sequence mSequence;

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -17,7 +17,7 @@ import tourguide.tourguide.ToolTip;
 import tourguide.tourguide.TourGuide;
 
 
-public class AdjustPaddingOverlayActivity extends ActionBarActivity {
+public class AdjustPaddingOverlayActivity extends AppCompatActivity {
     public TourGuide mTutorialHandler;
     public Activity mActivity;
 

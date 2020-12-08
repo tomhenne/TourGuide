@@ -1,22 +1,17 @@
 package tourguide.tourguidedemo
 
-import android.app.Activity
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.ActionBarActivity
+import android.support.v7.app.AppCompatActivity
 import android.view.Gravity
-import android.view.View
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_tooltip_gravity_i.*
-
 import tourguide.tourguide.Overlay
 import tourguide.tourguide.Pointer
 import tourguide.tourguide.ToolTip
 import tourguide.tourguide.TourGuide
 
 
-class ToolTipGravityActivity : ActionBarActivity() {
+class ToolTipGravityActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         /* Get parameters from main activity */
@@ -50,6 +45,7 @@ class ToolTipGravityActivity : ActionBarActivity() {
                 .setTextColor(Color.parseColor("#FFFFFF"))
                 .setGravity(gravity).setShadow(true)
 
+        val button = findViewById(R.id.button) as Button
         val mTutorialHandler = TourGuide.init(this).with(TourGuide.Technique.CLICK)
                 .setPointer(Pointer())
                 .setToolTip(toolTip)
