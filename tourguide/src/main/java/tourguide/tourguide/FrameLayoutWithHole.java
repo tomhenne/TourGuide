@@ -120,20 +120,13 @@ public class FrameLayoutWithHole extends FrameLayout {
 	}
 
 	private void init(AttributeSet attrs, int defStyle) {
-		// Load attributes
-//        final TypedArray a = getContext().obtainStyledAttributes(
-//                attrs, FrameLayoutWithHole, defStyle, 0);
-//
-//
-//        a.recycle();
 		setWillNotDraw(false);
 		// Set up a default TextPaint object
 		mTextPaint = new TextPaint();
 		mTextPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
 		mTextPaint.setTextAlign(Paint.Align.LEFT);
 
-		Point size = new Point();
-		size = getDefaultResolution(mActivity);
+		Point size = getDefaultResolution(mActivity);
 
 		mEraserBitmap = Bitmap.createBitmap(size.x, size.y, Bitmap.Config.ARGB_8888);
 		mEraserCanvas = new Canvas(mEraserBitmap);
