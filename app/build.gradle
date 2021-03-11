@@ -55,7 +55,7 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$supportVersion"
     implementation "com.android.support:design:$supportVersion"
     implementation project(':tourguide')
-    //implementation ('com.github.worker8:tourguide:1.0.23-SNAPSHOT@aar'){
+    //implementation ('com.github.worker8:tourguide:1.0.24-SNAPSHOT@aar'){
     //    transitive=true
     //}
 
