@@ -108,6 +108,9 @@ public class FrameLayoutWithHole extends FrameLayout {
 			mRadius = mViewHole.getWidth() / 2 + padding;
 		}
 		mMotionType = motionType;
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+			this.setForceDarkAllowed(false);
+		}
 
 		// Init a RectF to be used in OnDraw for a ROUNDED_RECTANGLE Style Overlay
 		if (mOverlay != null && mOverlay.mStyle == Overlay.Style.ROUNDED_RECTANGLE) {
